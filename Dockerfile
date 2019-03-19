@@ -128,6 +128,7 @@ RUN set -ex \
     && git config --global push.default simple
 
 COPY slurm.conf /etc/slurm/slurm.conf
+COPY gres.conf /etc/slurm/gres.conf
 COPY slurmdbd.conf /etc/slurm/slurmdbd.conf
 COPY supervisord.conf /etc/
 
